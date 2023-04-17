@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="main-body"><br><br><br><br>
+        <h3>Multiple Function Calculator</h3><br>
+        <input type="text" id="hay">   +   <input type="text" id="hey">   =   <input type="text" id="haay"><button onclick="add()">ADD</button><br><br>
+        <input type="text" id="lay"> - <input type="text" id="ley">   =   <input type="text" id="laay"><button onclick="minus()">SUBTRACT</button><br><br>
+        <input type="text" id="tay"> / <input type="text" id="tey">   =   <input type="text" id="taay"><button onclick="divide()">DIVIDE</button><br><br>
+        <input type="text" id="kay"> x <input type="text" id="key">  =   <input type="text" id="kaay"><button onclick="multiply()">MULTIPLY</button><br><br>
+    </div>
+
+    <script>
+        function add(){
+            y=Number(document.getElementById("hay").value)
+            z=Number(document.getElementById("hey").value)
+            d=document.getElementById("haay")
+            d.value= y+z
+        }
+
+        function minus(){
+            f=Number(document.getElementById("lay").value)
+            y=Number(document.getElementById("ley").value)
+            u=document.getElementById("laay")
+            u.value= f-y
+        }
+
+        function divide(){
+            y=Number(document.getElementById("tay").value)
+            z=Number(document.getElementById("tey").value)
+            d=document.getElementById("taay")
+            d.value= y/z
+        }
+
+        function multiply(){
+            y=Number(document.getElementById("kay").value)
+            z=Number(document.getElementById("key").value)
+            d=document.getElementById("kaay")
+            d.value= y*z
+        }
+    </script>
+</body>
+</html>
